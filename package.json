@@ -17,23 +17,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.27.2",
     "body-parser": "^1.18.2",
     "download": "^6.2.5",
     "express": "^4.15.5",
-    "express-ws": "^3.0.0",
+    "express-ws": "^5.0.2",
     "fs-extra": "^4.0.2",
-    "mongoose": "^4.11.13",
+    "mongoose": "^6.5.0",
     "semver": "^5.4.1",
-    "shelljs": "^0.7.8",
+    "shelljs": "^0.8.5",
     "underscore": "^1.8.3",
-    "yargs": "^9.0.1"
+    "yargs": "^17.5.1"
   },
   "config": {
     "ghooks": {
-      "commit-msg": "validate-commit-msg"
+      "commit-msg": "commitlint"
     },
-    "validate-commit-msg": {
+    "commitlint": {
       "types": [
         "feat",
         "fix",
@@ -52,9 +52,9 @@
   },
   "devDependencies": {
     "ghooks": "^2.0.0",
-    "validate-commit-msg": "^2.14.0"
+    "commitlint": "^16.1.0"
   },
   "engines": {
-    "node": ">= 7.6.0"
+    "node": ">= 16.1.0"
   }
 }
